@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <label>Name:</label>
+      <div  ng-init="person = {firstname:'pilli', lastname:'babu'}">
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <input type="text" ng-model="lastname" placeholder="Enter a last name"">
+      <hr>
+      <span >{{person.firstname}}</span>
+      <span >{{person.lastname}}</span>
+      <h1>Hello your name is  {{yourName}} {{lastname}}!</h1>
+    </div>
+
+        <div ng-init="names=['pradeep', 'wnated', 'god']">
+            <ul>
+                <li ng-repeat="name in names">{{name}}</li>
+            </ul>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+algorithmic analysis
+
+    identify efficient solution - analysing a algorithm helps determine efficiency in terms of time and space complexity
+    eanble scalability          - this works even if the data is growing
+    optimise system performence - optimise the system performenece
+    gide software development   - algorithm analysis helps developers write more efficient and effective code, guides about making the code structure
+    ensure predictable behaviour- helps the predictability and reliability of th ealgorithm
+    promote innovation          - understanding the strength and weakness of an algorithm through analysis        
+
+    
+course outcomes:
+    analyse the running times of algorithm
+    implement divide and conquer algorithms
+    implement optimisation and overlapping
+
+
+properties of an algorithm
+    finiteness      - it should always be finite number of steps
+    definiteness    - each step should be precisively defined and leaves no room for interpretation
+    input           - the input desired
+    output          - the desired output
+    effectiveness   - effectiveness of the algorithm
+
+example:
+    input - list of tourist attractions with their location, opening and closing
+
+    travel itenerary algorithm:
+        - pack all the necessities
+        - searching for the best travel destination 
+        - sorting the best route so that as much can be visited
+        - enjjoy the travel destination
+        - search for good restaurants in the destination
+        - go back to the home
