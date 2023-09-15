@@ -1,6 +1,30 @@
 <div *ngFor="let employee of employees">
-  <h1>employee name: {{employee.employee_name}}</h1>
-  <h2>employee age: {{employee.employee_age}}</h2>
-  <h3>employee salary: {{employee.employee_salary}}</h3>
-  <h4>{{employee.id}}</h4>
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-8">
+        <div class="card-body">
+          <p class="card-title">{{employee.employee_age}}</p>
+          <p class="card-title">{{employee.employee_name}}</p>
+          <p class="card-title">{{employee.employee_salary}}</p>
+          <p class="card-title">{{employee.id}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div *ngFor="let product of products">
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-8">
+        <div class="card-body">
+          <p class="card-title">{{product.id}}</p>
+          <p class="card-title">{{product.imageUrl}}</p>
+          <p class="card-title">{{product.name}}</p>
+          <p class="card-title">{{product.lastUpdated}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
