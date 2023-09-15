@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>template form</h1>
+  <form #loginForm="ngForm" (ngSubmit)="logg()">
+    <div class="form-group row">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" [(ngModel)]="user.email" name="user" minlength="2">
+    </div>
+    <div class="form-group row">
+      <label for="name">name</label>
+      <input type="name" class="form-control" [(ngModel)]="user.name" minlength="1">
+    </div>
+    <div class="form-group row">
+      <label for="address">address</label>
+      <input type="address" class="form-control" [(ngModel)]="user.address">
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Submit</button>
+</form>
+</div>
