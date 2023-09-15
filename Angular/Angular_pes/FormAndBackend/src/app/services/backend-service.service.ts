@@ -17,9 +17,7 @@ getAllCustomers(): Observable<Employee[]>{
 }
 
 interface ApiResponse{
-  status: string;
   data: Employee[];
-  message: string;
 }
 
 
