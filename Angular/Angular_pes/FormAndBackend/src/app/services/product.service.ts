@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Product } from '../classes/product';
 import { HtmlParser } from '@angular/compiler';
-import { map } from 'rxjs';
+import { Observable, map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +13,7 @@ export class ProductService {
   constructor(private httpClient: HttpClient) { }
 
 
-  getAllProducts(){
+  getAllProducts(): Observable<Product[]>{
     return this.httpClient.get<getProductsApi>("http://localhost:8080/api/products")
     .pipe(map(response => response._embedded.products));
   }

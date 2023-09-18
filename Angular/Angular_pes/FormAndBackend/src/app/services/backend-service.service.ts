@@ -10,11 +10,11 @@ export class BackendServiceService {
 
   constructor(private httpClient: HttpClient) { }
 
-getAllCustomers(): Observable<Employee[]>{
-    return this.httpClient.get<ApiResponse>("https://dummy.restapiexample.com/api/v1/employees")
-            .pipe(map(response => response.data));
+  getAllCustomers(): Observable<Employee[]>{
+      return this.httpClient.get<ApiResponse>("https://dummy.restapiexample.com/api/v1/employees")
+              .pipe(map(response => response.data));
+    }
   }
-}
 
 interface ApiResponse{
   data: Employee[];
