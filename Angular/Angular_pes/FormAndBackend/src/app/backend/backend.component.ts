@@ -4,6 +4,7 @@ import { BackendServiceService } from '../services/backend-service.service';
 import { Employee } from '../classes/employee';
 import { Product } from '../classes/product';
 import { ProductService } from '../services/product.service';
+import { TodoItem } from '../classes/todo-item';
 
 @Component({
   selector: 'app-backend',
@@ -32,11 +33,17 @@ export class BackendComponent implements OnInit{
       error => {
         console.log("mama mia", error);
       }
-    )
+    );
+
+    this.service2.getAllTodoItems().subscribe(
+      data => {this.todoItem = data},
+      error=> console.log(error)
+    );
   }
 
   employees: Employee[] = [];
 
   products: Product[] = [];
 
+  todoItem: TodoItem[] = [];
 }
